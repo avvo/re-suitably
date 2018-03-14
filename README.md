@@ -12,4 +12,4 @@ yarn add suitably-react
 
 ## License
 
-MIT © [TreTuna](https://github.com/TreTuna)
+MIT © [Avvo](https://github.com/avvo)
