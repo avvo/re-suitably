@@ -7,23 +7,7 @@
 ## Install
 
 ```bash
-npm install --save suitably-react
-```
-
-## Usage
-
-```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'suitably-react'
-
-class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
-}
+yarn add suitably-react
 ```
 
 ## License
