@@ -1,13 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import ExampleComponent from 'suitably-react'
+import { colors, Button } from "suitably-react";
 
 export default class App extends Component {
-  render () {
-    return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
-      </div>
-    )
+  render() {
+    console.log(Button, colors);
+    return <Button>Test</Button>;
   }
 }
