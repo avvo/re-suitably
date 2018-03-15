@@ -40,7 +40,6 @@ module.exports = {
   stateWarning: "rgba(252, 152, 53, 0.03)",
   stateDanger: "rgba(237, 79, 75, 0.03)",
   // light shades
-  white: "#FFFFFF",
   snow: "#F9FAFC",
   darkSnow: "#EFF2F7",
   extraDarkSnow: "#E5E9F2",
@@ -48,14 +47,13 @@ module.exports = {
   silver: "#8492A6",
   slate: "#3C4858",
   steel: "#273444",
-  // black: "#1F2D3D",
+  offBlack: "#1F2D3D",
   // dark shades
   smoke: "#E0E6ED",
   darkSmoke: "#D3DCE6",
   extraDarkSmoke: "#C0CCDA",
   // blue shades
   lightBlue: "#85D7FF",
-  // blue: "#1FB6FF",
   darkBlue: "#009EEB",
   // purple shades
   lightPurple: "#A389F4",
