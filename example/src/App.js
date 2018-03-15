@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 
-import { colors, Button } from "suitably-react";
+import { AvvoLogoSVG, colors } from "suitably-react";
 
 export default class App extends Component {
   render() {
-    console.log(Button, colors);
-    return <Button>Test</Button>;
+    console.log(colors);
+    return (
+      <div>
+        <AvvoLogoSVG width="750px" color={colors.semPrimary} />
+      </div>
+    );
   }
 }
