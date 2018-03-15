@@ -23,6 +23,5 @@ storiesOf("Avvo Logo SVG", module)
     return <AvvoLogoSVG width="200px" />;
   })
   .add("500px wide electric blue", () => {
-    console.log(colors);
     return <AvvoLogoSVG width="500px" color={colors.electricBlue} />;
   });
