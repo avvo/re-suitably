@@ -7,13 +7,13 @@ const Textbox = (props) => {
   return (<InputBase {...renderProps}>{props.children}</InputBase>);
 };
 
-Checkbox.propTypes = {
+Textbox.propTypes = {
   defaultValue: PropTypes.string,
   placeholder: PropTypes.string,
   onChange: PropTypes.func,
 };
 
-Checkbox.defaultProps = {
+Textbox.defaultProps = {
   defaultValue: '',
   onChange: null,
   placeholder: '',

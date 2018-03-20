@@ -11,11 +11,13 @@ import {
   AvvoLogoSVG,
   BreadcrumbLinks,
   Button,
+  Checkbox,
   colors,
   Icon,
   Link,
   Subtitle,
-  Title
+  Textbox,
+  Title,
 } from "../index.js";
 
 storiesOf("Avvo Logo SVG", module)
@@ -31,6 +33,14 @@ storiesOf("Button", module)
     return <Button>Hello Button</Button>;
   })
   .add("with some emoji", () => <Button>😀 😎 👍 💯</Button>);
+
+storiesOf("Checkbox", module)
+  .add("unchecked", () => <Checkbox />)
+  .add("default checked", () => <Checkbox />);
+
+storiesOf('Textbox', module)
+  .add("with a placeholder", () => <Textbox placeholder="Insert text here" />)
+  .add("with default text", () => <Textbox defaultValue="Initial text" />)
 
 storiesOf("Icons", module)
   .add("Globe icon", () => {

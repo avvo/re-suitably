@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 const useChecked = ({type}) => type === 'radio' || type === 'checkbox';
-const getValueKey(props) => useChecked(props) ? 'checked' : 'value';
+const getValueKey = (props) => useChecked(props) ? 'checked' : 'value';
 
 class InputBase extends Component {
   constructor(props) {
