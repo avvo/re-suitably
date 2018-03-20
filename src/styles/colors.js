@@ -34,7 +34,7 @@ const avvoSemantic = {
   semPrimary: avvoSecondary.orange,
   semSuccess: avvoTertiary.tertiaryGreen,
   semSecondary: "#0394b9",
-  semInfo: "##03AFDA",
+  semInfo: "#03AFDA",
   semWarning: avvoTertiary.tertiaryYellow,
   semDanger: avvoTertiary.tertiaryRed,
   semActive: avvoSecondary.orange
