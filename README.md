@@ -1,8 +1,8 @@
-# suitably-react
+# Re-Suitably
 
-> Avvo UI Kit React component library
+Avvo React component based version of [Suitably](https://github.com/avvo/suitably)
 
-[![NPM](https://img.shields.io/npm/v/suitably-react.svg)](https://www.npmjs.com/package/suitably-react)
+[![NPM](https://img.shields.io/npm/v/suitably-react.svg)](https://www.npmjs.com/package/@avvo/re-suitably)
 
 ## Install
 
