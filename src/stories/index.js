@@ -36,7 +36,7 @@ storiesOf("Button", module)
 
 storiesOf("Checkbox", module)
   .add("unchecked", () => <Checkbox onChange={action('checkbox-click')}/>)
-  .add("default checked", () => <Checkbox onChange={action('checkbox-click')} />);
+  .add("default checked", () => <Checkbox defaultChecked={true} onChange={action('checkbox-click')} />);
 
 storiesOf('Textbox', module)
   .add("with a placeholder", () => <Textbox placeholder="Insert text here" onChange={action('text-change')} />)
