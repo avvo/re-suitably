@@ -34,7 +34,7 @@ class InputBase extends Component {
 
 InputBase.propTypes = {
   defaultValue: PropTypes.string,
-  defaultChecked: PropTypes.boolean,
+  defaultChecked: PropTypes.bool,
 };
 
 InputBase.defaultProps = {

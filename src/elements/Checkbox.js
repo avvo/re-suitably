@@ -8,7 +8,7 @@ const Checkbox = (props) => {
 };
 
 Checkbox.propTypes = {
-  defaultChecked: PropTypes.boolean,
+  defaultChecked: PropTypes.bool,
   onChange: PropTypes.func,
 };
 
