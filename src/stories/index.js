@@ -9,6 +9,7 @@ import { faGlobe } from "@fortawesome/fontawesome-free-solid";
 
 import {
   AvvoLogoSVG,
+  BreadcrumbLinks,
   Button,
   colors,
   Icon,
@@ -56,3 +57,12 @@ storiesOf("Icons", module)
   .add("Person icon", () => {
     return <Icon icon="user" />;
   });
+
+storiesOf("BreadcrumbLinks", module).add("Amos links", () => {
+  const amos = process.env.AMOS_BASE_URL;
+  const breadcrumbLinks = [
+    { url: `${amos}profile/dashboard`, name: "My Avvo" },
+    { url: `${amos}profile/impression_stats`, name: "Analytics" }
+  ];
+  return <BreadcrumbLinks links={breadcrumbLinks} currentPage="Storybook" />;
+});

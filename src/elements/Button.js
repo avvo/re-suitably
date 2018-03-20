@@ -4,7 +4,6 @@ import styled from "styled-components";
 import identity from "ramda/src/identity";
 import colors from "../styles/colors";
 
-console.log(colors);
 const ButtonLink = styled.a`
   border: 1px solid ${colors.semInfo};
   margin-top: 10px;
@@ -31,21 +30,15 @@ const ButtonLink = styled.a`
   }
 `;
 
-class Button extends React.Component {
-  static propTypes = {
-    onClick: PropTypes.func,
-    href: PropTypes.string
-  };
+const Button = ({ onClick, href, children }) => (
+  <ButtonLink onClick={onClick || identity} href={href}>
+    {children}
+  </ButtonLink>
+);
 
-  render() {
-    const { onClick, href, children } = this.props;
-
-    return (
-      <ButtonLink onClick={onClick || identity} href={href}>
-        {children}
-      </ButtonLink>
-    );
-  }
-}
+Button.propTypes = {
+  onClick: PropTypes.func,
+  href: PropTypes.string
+};
 
 export default Button;

@@ -1,6 +1,6 @@
 {
   "name": "@avvo/re-suitably",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Avvo UI Kit React component library",
   "author": "Avvo",
   "license": "MIT",
@@ -56,6 +56,7 @@
     "babel-eslint": "^8.2.1",
     "babel-jest": "^23.0.0-alpha.0",
     "babel-plugin-styled-components": "^1.5.1",
+    "dotenv-webpack": "^1.5.5",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
