@@ -4,19 +4,18 @@ import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { linkTo } from "@storybook/addon-links";
 
-import { Welcome } from "@storybook/react/demo";
+import FontAwesome from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/fontawesome-free-solid";
 
-import { AvvoLogoSVG, Button, colors } from "../index.js";
-
-storiesOf("Welcome", module).add("to Storybook", () => (
-  <Welcome showApp={linkTo("Button")} />
-));
-
-storiesOf("Button", module)
-  .add("with text", () => {
-    return <Button>Hello Button</Button>;
-  })
-  .add("with some emoji", () => <Button>😀 😎 👍 💯</Button>);
+import {
+  AvvoLogoSVG,
+  Button,
+  colors,
+  Icon,
+  Link,
+  Subtitle,
+  Title
+} from "../index.js";
 
 storiesOf("Avvo Logo SVG", module)
   .add("200px wide dark blue", () => {
@@ -24,4 +23,36 @@ storiesOf("Avvo Logo SVG", module)
   })
   .add("500px wide electric blue", () => {
     return <AvvoLogoSVG width="500px" color={colors.electricBlue} />;
+  });
+
+storiesOf("Button", module)
+  .add("with text", () => {
+    return <Button>Hello Button</Button>;
+  })
+  .add("with some emoji", () => <Button>😀 😎 👍 💯</Button>);
+
+storiesOf("Icons", module)
+  .add("Globe icon", () => {
+    return <FontAwesome icon="globe" />;
+  })
+  .add("Phone icon", () => {
+    return <Icon icon="phone" />;
+  })
+  .add("Envelope icon", () => {
+    return <Icon icon="envelope" />;
+  })
+  .add("ChevronUp icon", () => {
+    return <Icon icon="chevron-up" />;
+  })
+  .add("ChevronDown icon", () => {
+    return <Icon icon="chevron-down" />;
+  })
+  .add("ChevronLeft icon", () => {
+    return <Icon icon="chevron-left" />;
+  })
+  .add("ChevronRight icon", () => {
+    return <Icon icon="chevron-right" />;
+  })
+  .add("Person icon", () => {
+    return <Icon icon="user" />;
   });

@@ -6,7 +6,7 @@
         "modules": false
       }
     ],
-    "@babel/preset-stage-0",
+    "@babel/preset-stage-3",
     "@babel/preset-react"
   ],
   "env": {

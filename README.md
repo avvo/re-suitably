@@ -2,7 +2,7 @@
 
 Avvo React component based version of [Suitably](https://github.com/avvo/suitably)
 
-[![NPM](https://img.shields.io/npm/v/suitably-react.svg)](https://www.npmjs.com/package/@avvo/re-suitably)
+[![npm (scoped)](https://img.shields.io/npm/v/@cycle/core.svg)](https://github.com/avvo/re-suitably)
 
 ## Install
 
