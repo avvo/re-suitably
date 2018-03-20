@@ -14,10 +14,10 @@ class InputBase extends Component {
   }
 
   onChange(event) {
-    const value = useChecked(this.props) ? event.target.checked : event.target.value;
+    const value = useChecked(this.props) ? !!event.target.checked : event.target.value;
     this.setState({ value });
     if (this.props.onChange) {
-      this.props.onChange(event);
+      this.props.onChange({event, value});
     }
   }
 
@@ -26,6 +26,8 @@ class InputBase extends Component {
     const overrideProps = {
       onChange: this.onChange,
       [valueKey]: this.state.value,
+      defaultValue: undefined,
+      defaultChecked: undefined,
     };
     const renderProps = Object.assign({}, this.props, overrideProps);
     return <input {...renderProps}>{this.props.children}</input>

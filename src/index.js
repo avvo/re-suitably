@@ -18,6 +18,6 @@ export {
   Link,
   Icon,
   Subtitle,
-  Text,
+  Textbox,
   Title,
 };

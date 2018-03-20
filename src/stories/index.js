@@ -35,12 +35,12 @@ storiesOf("Button", module)
   .add("with some emoji", () => <Button>😀 😎 👍 💯</Button>);
 
 storiesOf("Checkbox", module)
-  .add("unchecked", () => <Checkbox />)
-  .add("default checked", () => <Checkbox />);
+  .add("unchecked", () => <Checkbox onChange={action('checkbox-click')}/>)
+  .add("default checked", () => <Checkbox onChange={action('checkbox-click')} />);
 
 storiesOf('Textbox', module)
-  .add("with a placeholder", () => <Textbox placeholder="Insert text here" />)
-  .add("with default text", () => <Textbox defaultValue="Initial text" />)
+  .add("with a placeholder", () => <Textbox placeholder="Insert text here" onChange={action('text-change')} />)
+  .add("with default text", () => <Textbox defaultValue="Initial text" onChange={action('text-change')} />)
 
 storiesOf("Icons", module)
   .add("Globe icon", () => {
