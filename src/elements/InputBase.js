@@ -13,6 +13,7 @@ class InputBase extends Component {
     this.onChange = this.onChange.bind(this);
   }
 
+  /* istanbul ignore next */
   onChange(event) {
     const value = useChecked(this.props) ? !!event.target.checked : event.target.value;
     this.setState({ value });

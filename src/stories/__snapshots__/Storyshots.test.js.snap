@@ -117,6 +117,26 @@ exports[`Storyshots Button with text 1`] = `
 </a>
 `;
 
+exports[`Storyshots Checkbox default checked 1`] = `
+<input
+  checked={false}
+  defaultChecked={undefined}
+  defaultValue={undefined}
+  onChange={[Function]}
+  type="checkbox"
+/>
+`;
+
+exports[`Storyshots Checkbox unchecked 1`] = `
+<input
+  checked={false}
+  defaultChecked={undefined}
+  defaultValue={undefined}
+  onChange={[Function]}
+  type="checkbox"
+/>
+`;
+
 exports[`Storyshots Icons ChevronDown icon 1`] = `
 <svg
   aria-hidden="true"
@@ -267,4 +287,26 @@ exports[`Storyshots Icons Phone icon 1`] = `
     style={Object {}}
   />
 </svg>
+`;
+
+exports[`Storyshots Textbox with a placeholder 1`] = `
+<input
+  defaultChecked={undefined}
+  defaultValue={undefined}
+  onChange={[Function]}
+  placeholder="Insert text here"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Storyshots Textbox with default text 1`] = `
+<input
+  defaultChecked={undefined}
+  defaultValue={undefined}
+  onChange={[Function]}
+  placeholder=""
+  type="text"
+  value="Initial text"
+/>
 `;
