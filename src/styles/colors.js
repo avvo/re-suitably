@@ -9,7 +9,9 @@ const avvoPrimary = {
 
 const avvoSecondary = {
   blue: "#008CC9",
-  orange: "#F55D25"
+  orange: "#F55D25",
+  orangeHover: "#FF8355",
+  orangeActive: "#DD3B00",
 };
 
 const avvoTertiary = {
