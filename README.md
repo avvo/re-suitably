@@ -15,9 +15,9 @@ brew install yarn
 Install into your React application
 
 ```bash
-npm install --save suitably-react
+npm install --save @avvo/re-suitably
 // or
-yarn add suitably-react
+yarn add @avvo/re-suitably
 ```
 
 ## Using this repo in your React application while contributing

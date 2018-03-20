@@ -1,19 +1,19 @@
 {
-  "name": "suitably-react",
+  "name": "@avvo/re-suitably",
   "version": "0.1.0",
   "description": "Avvo UI Kit React component library",
   "author": "Avvo",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/avvo/suitably-react.git"
+    "url": "git://github.com/avvo/re-suitably.git"
   },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "files": ["dist"],
   "scripts": {
-    "link:example": "npm link && cd example && npm link suitably-react",
+    "link:example": "npm link && cd example && npm link re-suitably",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
     "lint:css": "stylelint './src/**/*.js'",
