@@ -17,7 +17,7 @@ const baseButtonStyles = css`
   cursor: pointer;
 `;
 
-const PrimaryButtonLink = styled.a`
+const PrimaryButton = styled.button`
   ${baseButtonStyles}
   background-color: ${colors.semPrimary};
   border: 1px solid ${colors.semPrimary};
@@ -34,7 +34,7 @@ const PrimaryButtonLink = styled.a`
   }
 `;
 
-const SecondaryButtonLink = styled.a`
+const SecondaryButton = styled.button`
   ${baseButtonStyles}
   border: 1px solid ${colors.semInfo};
   &:hover {
@@ -50,25 +50,30 @@ const SecondaryButtonLink = styled.a`
 `;
 
 
-const Button = ({ onClick, href, children, primary }) => {
-  const ButtonClass = primary ? PrimaryButtonLink : SecondaryButtonLink
+const Button = ({ onClick, href, children, primary, disabled }) => {
+  const ButtonClass = primary ? PrimaryButton : SecondaryButton
 
+  const buttonProps = {
+    onClick,
+    href,
+    disabled: disabled ? true : undefined,
+  };
   return (
-    <ButtonClass onClick={onClick || identity} href={href}>
+    <ButtonClass {...buttonProps}>
       {children}
     </ButtonClass>
   );
 };
 
 Button.propTypes = {
+  disabled: PropTypes.bool,
   onClick: PropTypes.func,
-  href: PropTypes.string,
   primary: PropTypes.bool,
 };
 
 Button.defaultProps = {
   primary: false,
-  href: undefined,
+  disabled: false,
   onClick: null,
 };
 

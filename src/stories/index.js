@@ -11,6 +11,7 @@ import {
   AvvoLogoSVG,
   BreadcrumbLinks,
   Button,
+  ButtonLink,
   Checkbox,
   colors,
   Icon,
@@ -32,8 +33,15 @@ storiesOf("Button", module)
   .add("with text", () => {
     return <Button>Hello Button</Button>;
   })
-  .add("with some emoji", () => <Button>😀 😎 👍 💯</Button>)
-  .add("primary button", () => <Button primary>Hello Button</Button>);
+  .add("with some emoji", () => <Button onClick={action('button-click')}>😀 😎 👍 💯</Button>)
+  .add("primary button", () => <Button primary onClick={action('button-click')}>Hello Button</Button>)
+  .add("disabled button", () => <Button disabled onClick={action('button-click')}>Disabled button</Button>);
+
+storiesOf('ButtonLink', module)
+  .add('default href', () => <ButtonLink>Hi button</ButtonLink>)
+  .add('with a custom href', () => <ButtonLink href="/">Go home</ButtonLink>)
+  .add('primary ButtonLink', () => <ButtonLink primary>Primary Button</ButtonLink>)
+  .add('disabled ButtonLink', () => <ButtonLink disabled onClick={action('buttonlink-click')}>disabled Button</ButtonLink>)
 
 storiesOf("Checkbox", module)
   .add("unchecked", () => <Checkbox onChange={action('checkbox-click')}/>)
