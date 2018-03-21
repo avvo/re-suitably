@@ -12,12 +12,11 @@ const Textbox = (props) => {
 Textbox.propTypes = {
   defaultValue: PropTypes.string,
   placeholder: PropTypes.string,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func.isRequired,
 };
 
 Textbox.defaultProps = {
   defaultValue: '',
-  onChange: null,
   placeholder: '',
 };
 
@@ -34,20 +33,20 @@ const StyledTextbox = styled(Textbox)`
   transition: border-color ease-in-out .15s;
 
   &:focus {
-    border-color: #66AFE9;
+    border-color: ${colors.textboxBorder};
     outline: 0;
   }
   &::placeholder {
-    color: rgba(51,51,51,0.4);
+    color: ${colors.textboxPlaceholderColor};
   }
   &[disabled],fieldset[disabled] .& {
     cursor: not-allowed;
-    background-color: rgba(0,0,0,0.02);
+    background-color: ${colors.textboxDisabledColor};
     opacity: 1
   }
 
   &[readonly] {
-      background-color: rgba(0,0,0,0.02);
+      background-color: ${colors.textboxDisabledColor};
       cursor: default
   }
 `;

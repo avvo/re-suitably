@@ -31,6 +31,13 @@ const avvoGreyScale = {
   black: "#000000"
 };
 
+const avvoTextbox = {
+  // These should be consolidated into standard colors
+  textboxBorder: '#66AFE9',
+  textboxPlaceholderColor: 'rgba(51,51,51,0.4)',
+  textboxDisabledColor: 'rgba(0,0,0,0.02)',
+};
+
 const avvoSemantic = {
   avvoPro: avvoPrimary.electricBlue,
   semPrimary: avvoSecondary.orange,
@@ -62,5 +69,6 @@ module.exports = Object.assign(
   avvoGreyScale,
   avvoSemantic,
   avvoActiveItem,
-  avvoFeedbackStates
+  avvoFeedbackStates,
+  avvoTextbox,
 );

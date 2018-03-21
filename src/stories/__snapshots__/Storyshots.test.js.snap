@@ -97,10 +97,20 @@ exports[`Storyshots BreadcrumbLinks Amos links 1`] = `
 </div>
 `;
 
+exports[`Storyshots Button primary button 1`] = `
+<a
+  className="Button__PrimaryButtonLink-ghpTYh jUufNi"
+  href={null}
+  onClick={[Function]}
+>
+  Hello Button
+</a>
+`;
+
 exports[`Storyshots Button with some emoji 1`] = `
 <a
-  className="Button__ButtonLink-hbhwvA bzhEsZ"
-  href={undefined}
+  className="Button__SecondaryButtonLink-euWmas drZepp"
+  href={null}
   onClick={[Function]}
 >
   😀 😎 👍 💯
@@ -109,8 +119,8 @@ exports[`Storyshots Button with some emoji 1`] = `
 
 exports[`Storyshots Button with text 1`] = `
 <a
-  className="Button__ButtonLink-hbhwvA bzhEsZ"
-  href={undefined}
+  className="Button__SecondaryButtonLink-euWmas drZepp"
+  href={null}
   onClick={[Function]}
 >
   Hello Button

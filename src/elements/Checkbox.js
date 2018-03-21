@@ -9,12 +9,11 @@ const Checkbox = (props) => {
 
 Checkbox.propTypes = {
   defaultChecked: PropTypes.bool,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func.isRequired,
 };
 
 Checkbox.defaultProps = {
   defaultChecked: false,
-  onChange: null,
 };
 
 export default Checkbox;
