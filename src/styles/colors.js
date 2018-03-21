@@ -9,7 +9,9 @@ const avvoPrimary = {
 
 const avvoSecondary = {
   blue: "#008CC9",
-  orange: "#F55D25"
+  orange: "#F55D25",
+  orangeHover: "#FF8355",
+  orangeActive: "#DD3B00",
 };
 
 const avvoTertiary = {
@@ -27,6 +29,13 @@ const avvoGreyScale = {
   grey70: "#666666",
   grey90: "#333333",
   black: "#000000"
+};
+
+const avvoTextbox = {
+  // These should be consolidated into standard colors
+  textboxBorder: '#66AFE9',
+  textboxPlaceholderColor: 'rgba(51,51,51,0.4)',
+  textboxDisabledColor: 'rgba(0,0,0,0.02)',
 };
 
 const avvoSemantic = {
@@ -60,5 +69,6 @@ module.exports = Object.assign(
   avvoGreyScale,
   avvoSemantic,
   avvoActiveItem,
-  avvoFeedbackStates
+  avvoFeedbackStates,
+  avvoTextbox,
 );

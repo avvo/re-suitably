@@ -97,9 +97,19 @@ exports[`Storyshots BreadcrumbLinks Amos links 1`] = `
 </div>
 `;
 
+exports[`Storyshots Button primary button 1`] = `
+<a
+  className="Button__PrimaryButtonLink-ghpTYh jUufNi"
+  href={undefined}
+  onClick={[Function]}
+>
+  Hello Button
+</a>
+`;
+
 exports[`Storyshots Button with some emoji 1`] = `
 <a
-  className="Button__ButtonLink-hbhwvA bzhEsZ"
+  className="Button__SecondaryButtonLink-euWmas drZepp"
   href={undefined}
   onClick={[Function]}
 >
@@ -109,12 +119,32 @@ exports[`Storyshots Button with some emoji 1`] = `
 
 exports[`Storyshots Button with text 1`] = `
 <a
-  className="Button__ButtonLink-hbhwvA bzhEsZ"
+  className="Button__SecondaryButtonLink-euWmas drZepp"
   href={undefined}
   onClick={[Function]}
 >
   Hello Button
 </a>
+`;
+
+exports[`Storyshots Checkbox default checked 1`] = `
+<input
+  checked={true}
+  defaultChecked={undefined}
+  defaultValue={undefined}
+  onChange={[Function]}
+  type="checkbox"
+/>
+`;
+
+exports[`Storyshots Checkbox unchecked 1`] = `
+<input
+  checked={false}
+  defaultChecked={undefined}
+  defaultValue={undefined}
+  onChange={[Function]}
+  type="checkbox"
+/>
 `;
 
 exports[`Storyshots Icons ChevronDown icon 1`] = `
@@ -267,4 +297,28 @@ exports[`Storyshots Icons Phone icon 1`] = `
     style={Object {}}
   />
 </svg>
+`;
+
+exports[`Storyshots Textbox with a placeholder 1`] = `
+<input
+  className="Textbox__StyledTextbox-bzsmBu jrCfXF"
+  defaultChecked={undefined}
+  defaultValue={undefined}
+  onChange={[Function]}
+  placeholder="Insert text here"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Storyshots Textbox with default text 1`] = `
+<input
+  className="Textbox__StyledTextbox-bzsmBu jrCfXF"
+  defaultChecked={undefined}
+  defaultValue={undefined}
+  onChange={[Function]}
+  placeholder=""
+  type="text"
+  value="Initial text"
+/>
 `;

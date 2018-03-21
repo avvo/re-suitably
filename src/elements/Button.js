@@ -1,23 +1,42 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import identity from "ramda/src/identity";
 import colors from "../styles/colors";
 
-const ButtonLink = styled.a`
-  border: 1px solid ${colors.semInfo};
+const baseButtonStyles = css`
   margin-top: 10px;
   display: flex;
   justify-content: center;
   border-radius: 2px;
   padding: 0.5rem 1rem;
   width: 100%;
-  color: ${colors.semInfo};
   text-decoration: none;
   font-size: 0.875rem;
   transition: all 0.3s ease;
   cursor: pointer;
+`;
 
+const PrimaryButtonLink = styled.a`
+  ${baseButtonStyles}
+  background-color: ${colors.semPrimary};
+  border: 1px solid ${colors.semPrimary};
+  color: ${colors.white};
+  font-family: "Circular, Helvetica, sans-serif";
+  &:hover {
+    background-color: ${colors.orangeHover};
+    border: 1px solid ${colors.orangeHover};
+  }
+
+  &:active {
+    background-color: ${colors.orangeActive};
+    border: 1px solid ${colors.orangeActive};
+  }
+`;
+
+const SecondaryButtonLink = styled.a`
+  ${baseButtonStyles}
+  border: 1px solid ${colors.semInfo};
   &:hover {
     color: ${colors.semSecondary};
     box-shadow: ${colors.blue} 0 0 0 1px inset;
@@ -30,15 +49,27 @@ const ButtonLink = styled.a`
   }
 `;
 
-const Button = ({ onClick, href, children }) => (
-  <ButtonLink onClick={onClick || identity} href={href}>
-    {children}
-  </ButtonLink>
-);
+
+const Button = ({ onClick, href, children, primary }) => {
+  const ButtonClass = primary ? PrimaryButtonLink : SecondaryButtonLink
+
+  return (
+    <ButtonClass onClick={onClick || identity} href={href}>
+      {children}
+    </ButtonClass>
+  );
+};
 
 Button.propTypes = {
   onClick: PropTypes.func,
-  href: PropTypes.string
+  href: PropTypes.string,
+  primary: PropTypes.bool,
+};
+
+Button.defaultProps = {
+  primary: false,
+  href: undefined,
+  onClick: null,
 };
 
 export default Button;
