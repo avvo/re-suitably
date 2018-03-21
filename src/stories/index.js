@@ -32,7 +32,8 @@ storiesOf("Button", module)
   .add("with text", () => {
     return <Button>Hello Button</Button>;
   })
-  .add("with some emoji", () => <Button>😀 😎 👍 💯</Button>);
+  .add("with some emoji", () => <Button>😀 😎 👍 💯</Button>)
+  .add("primary button", () => <Button primary>Hello Button</Button>);
 
 storiesOf("Checkbox", module)
   .add("unchecked", () => <Checkbox onChange={action('checkbox-click')}/>)
