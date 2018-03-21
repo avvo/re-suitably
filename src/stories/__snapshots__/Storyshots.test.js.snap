@@ -97,33 +97,115 @@ exports[`Storyshots BreadcrumbLinks Amos links 1`] = `
 </div>
 `;
 
+exports[`Storyshots Button disabled button 1`] = `
+<button
+  className="Button__SecondaryButton-dPBNFl jflWU"
+  disabled={true}
+  href={undefined}
+  onClick={[Function]}
+>
+  Disabled button
+</button>
+`;
+
 exports[`Storyshots Button primary button 1`] = `
-<a
-  className="Button__PrimaryButtonLink-ghpTYh jUufNi"
+<button
+  className="Button__PrimaryButton-kSpITw egvtzb"
+  disabled={undefined}
   href={undefined}
   onClick={[Function]}
 >
   Hello Button
-</a>
+</button>
 `;
 
 exports[`Storyshots Button with some emoji 1`] = `
-<a
-  className="Button__SecondaryButtonLink-euWmas drZepp"
+<button
+  className="Button__SecondaryButton-dPBNFl jflWU"
+  disabled={undefined}
   href={undefined}
   onClick={[Function]}
 >
   😀 😎 👍 💯
-</a>
+</button>
 `;
 
 exports[`Storyshots Button with text 1`] = `
-<a
-  className="Button__SecondaryButtonLink-euWmas drZepp"
+<button
+  className="Button__SecondaryButton-dPBNFl jflWU"
+  disabled={undefined}
   href={undefined}
-  onClick={[Function]}
+  onClick={null}
 >
   Hello Button
+</button>
+`;
+
+exports[`Storyshots ButtonLink default href 1`] = `
+<a
+  className="Link-DKeTA lnlLQC"
+  href="#"
+  onClick={null}
+>
+  <button
+    className="Button__SecondaryButton-dPBNFl jflWU"
+    disabled={undefined}
+    href={undefined}
+    onClick={null}
+  >
+    Hi button
+  </button>
+</a>
+`;
+
+exports[`Storyshots ButtonLink disabled ButtonLink 1`] = `
+<a
+  className="Link-DKeTA lnlLQC"
+  href="#"
+  onClick={[Function]}
+>
+  <button
+    className="Button__SecondaryButton-dPBNFl jflWU"
+    disabled={true}
+    href={undefined}
+    onClick={[Function]}
+  >
+    disabled Button
+  </button>
+</a>
+`;
+
+exports[`Storyshots ButtonLink primary ButtonLink 1`] = `
+<a
+  className="Link-DKeTA lnlLQC"
+  href="#"
+  onClick={null}
+>
+  <button
+    className="Button__PrimaryButton-kSpITw egvtzb"
+    disabled={undefined}
+    href={undefined}
+    onClick={null}
+  >
+    Primary Button
+  </button>
+</a>
+`;
+
+exports[`Storyshots ButtonLink with a custom href 1`] = `
+<a
+  className="Link-DKeTA lnlLQC"
+  href="/"
+  onClick={null}
+>
+  <button
+    className="Button__SecondaryButton-dPBNFl jflWU"
+    disabled={undefined}
+    href={undefined}
+    onClick={null}
+  >
+    Go home
+  </button>
 </a>
 `;
 
