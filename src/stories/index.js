@@ -18,14 +18,30 @@ import {
   Link,
   Subtitle,
   Textbox,
-  Title,
+  Title
 } from "../index.js";
 
 storiesOf("Avvo Logo SVG", module)
-  .add("200px wide dark blue", () => {
+  .add("200px wide dark blue with hover effect", () => {
+    return <AvvoLogoSVG width="200px" hover />;
+  })
+  .add("200px wide dark blue with no hover effect", () => {
     return <AvvoLogoSVG width="200px" />;
   })
-  .add("500px wide electric blue", () => {
+  .add(
+    "500px wide with custom electric blue fill and custom navy hover color",
+    () => {
+      return (
+        <AvvoLogoSVG
+          width="500px"
+          color={colors.electricBlue}
+          hover
+          hoverColor={colors.navy}
+        />
+      );
+    }
+  )
+  .add("500px wide with custom electric blue but no hover", () => {
     return <AvvoLogoSVG width="500px" color={colors.electricBlue} />;
   });
 
@@ -44,12 +60,18 @@ storiesOf('ButtonLink', module)
   .add('disabled ButtonLink', () => <ButtonLink disabled onClick={action('buttonlink-click')}>disabled Button</ButtonLink>)
 
 storiesOf("Checkbox", module)
-  .add("unchecked", () => <Checkbox onChange={action('checkbox-click')}/>)
-  .add("default checked", () => <Checkbox defaultChecked={true} onChange={action('checkbox-click')} />);
+  .add("unchecked", () => <Checkbox onChange={action("checkbox-click")} />)
+  .add("default checked", () => (
+    <Checkbox defaultChecked={true} onChange={action("checkbox-click")} />
+  ));
 
-storiesOf('Textbox', module)
-  .add("with a placeholder", () => <Textbox placeholder="Insert text here" onChange={action('text-change')} />)
-  .add("with default text", () => <Textbox defaultValue="Initial text" onChange={action('text-change')} />)
+storiesOf("Textbox", module)
+  .add("with a placeholder", () => (
+    <Textbox placeholder="Insert text here" onChange={action("text-change")} />
+  ))
+  .add("with default text", () => (
+    <Textbox defaultValue="Initial text" onChange={action("text-change")} />
+  ));
 
 storiesOf("Icons", module)
   .add("Globe icon", () => {
