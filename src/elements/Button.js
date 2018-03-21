@@ -52,6 +52,7 @@ const SecondaryButtonLink = styled.a`
 
 const Button = ({ onClick, href, children, primary }) => {
   const ButtonClass = primary ? PrimaryButtonLink : SecondaryButtonLink
+
   return (
     <ButtonClass onClick={onClick || identity} href={href}>
       {children}
@@ -67,7 +68,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   primary: false,
-  href: null,
+  href: undefined,
   onClick: null,
 };
 
