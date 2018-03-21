@@ -4,7 +4,7 @@ import Button from './Button';
 import Link from './Link';
 
 const ButtonLink = (props) => {
-  const buttonProps = Object.assign({}, props, {children: undefined, href: undefined});
+  const buttonProps = Object.assign({}, props, {children: undefined, href: undefined, onClick: undefined});
   return (
     <Link href={props.href} onClick={props.onClick}>
       <Button {...buttonProps}>{props.children}</Button>
