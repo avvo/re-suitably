@@ -11,7 +11,7 @@ const BreadcrumbLinks = ({ links, currentPage }) => {
         <span key={link.name}>
           <Link href={link.url}>{link.name}</Link>
           &nbsp;<Icon
-            name="chevron-right"
+            name="ChevronRight"
             style={{ color: colors.grey40 }}
           />&nbsp;
         </span>

@@ -1,18 +1,27 @@
 import React from "react";
-import FontAwesome from "@fortawesome/react-fontawesome";
-import faGlobe from "@fortawesome/fontawesome-free-solid/faGlobe";
-import faPhone from "@fortawesome/fontawesome-free-solid/faPhone";
-import faEnvelope from "@fortawesome/fontawesome-free-regular/faEnvelope";
-import faChevronUp from "@fortawesome/fontawesome-free-solid/faChevronUp";
-import faChevronDown from "@fortawesome/fontawesome-free-solid/faChevronDown";
-import faChevronLeft from "@fortawesome/fontawesome-free-solid/faChevronLeft";
-import faChevronRight from "@fortawesome/fontawesome-free-solid/faChevronRight";
-import faPerson from "@fortawesome/fontawesome-free-solid/faUser";
-import faArrowCircleDown from "@fortawesome/fontawesome-free-solid/faArrowCircleDown";
-import faSort from "@fortawesome/fontawesome-free-solid/faSort";
+import FontAwesomeIcon from "@fortawesome/react-fontawesome";
+import Globe from "@fortawesome/fontawesome-free-solid/faGlobe";
+import Phone from "@fortawesome/fontawesome-free-solid/faPhone";
+import Envelope from "@fortawesome/fontawesome-free-regular/faEnvelope";
+import ChevronUp from "@fortawesome/fontawesome-free-solid/faChevronUp";
+import ChevronDown from "@fortawesome/fontawesome-free-solid/faChevronDown";
+import ChevronRight from "@fortawesome/fontawesome-free-solid/faChevronRight";
+import ChevronLeft from "@fortawesome/fontawesome-free-solid/faChevronLeft";
+import User from "@fortawesome/fontawesome-free-solid/faUser";
+
+const icons = {
+  Globe,
+  Phone,
+  Envelope,
+  ChevronUp,
+  ChevronDown,
+  ChevronRight,
+  ChevronLeft,
+  User
+};
 
 const Icon = props => {
-  return <FontAwesome icon={props.name} {...props} />;
+  return <FontAwesomeIcon icon={icons[props.name]} {...props} />;
 };
 
 export default Icon;
