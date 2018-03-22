@@ -2,8 +2,7 @@
 
 exports[`Storyshots Avvo Logo SVG 200px wide dark blue with hover effect 1`] = `
 <svg
-  className="AvvoLogoSVG__StyledSvgComponent-bFXSQg dVgnRV"
-  hover={true}
+  className="AvvoLogoSVG__StyledSvgComponent-bFXSQg iMAWhl"
   viewBox="0 0 381.2 111.4"
   width="200px"
 >
@@ -15,7 +14,7 @@ exports[`Storyshots Avvo Logo SVG 200px wide dark blue with hover effect 1`] = `
 
 exports[`Storyshots Avvo Logo SVG 200px wide dark blue with no hover effect 1`] = `
 <svg
-  className="AvvoLogoSVG__StyledSvgComponent-bFXSQg bPVphK"
+  className="AvvoLogoSVG__StyledSvgComponent-bFXSQg hPzKpN"
   viewBox="0 0 381.2 111.4"
   width="200px"
 >
@@ -27,8 +26,7 @@ exports[`Storyshots Avvo Logo SVG 200px wide dark blue with no hover effect 1`] 
 
 exports[`Storyshots Avvo Logo SVG 500px wide with custom electric blue but no hover 1`] = `
 <svg
-  className="AvvoLogoSVG__StyledSvgComponent-bFXSQg kZyvzL"
-  color="#26DDFC"
+  className="AvvoLogoSVG__StyledSvgComponent-bFXSQg dUjOVA"
   viewBox="0 0 381.2 111.4"
   width="500px"
 >
@@ -40,10 +38,7 @@ exports[`Storyshots Avvo Logo SVG 500px wide with custom electric blue but no ho
 
 exports[`Storyshots Avvo Logo SVG 500px wide with custom electric blue fill and custom navy hover color 1`] = `
 <svg
-  className="AvvoLogoSVG__StyledSvgComponent-bFXSQg bfGfLP"
-  color="#26DDFC"
-  hover={true}
-  hoverColor="#00447B"
+  className="AvvoLogoSVG__StyledSvgComponent-bFXSQg cxmCnT"
   viewBox="0 0 381.2 111.4"
   width="500px"
 >
@@ -196,7 +191,7 @@ exports[`Storyshots ButtonLink disabled ButtonLink 1`] = `
     className="Button__SecondaryButton-dPBNFl jflWU"
     disabled={true}
     href={undefined}
-    onClick={[Function]}
+    onClick={null}
   >
     disabled Button
   </button>
