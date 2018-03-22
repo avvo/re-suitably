@@ -1,6 +1,6 @@
 {
   "name": "@avvo/re-suitably",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Avvo UI Kit React component library",
   "author": "Avvo",
   "license": "MIT",
@@ -11,9 +11,7 @@
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "link:example": "npm link && cd example && npm link re-suitably",
     "lint": "eslint lib/**; exit 0",
