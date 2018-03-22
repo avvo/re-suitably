@@ -20,8 +20,6 @@ const icons = {
   User
 };
 
-const Icon = props => {
-  return <FontAwesomeIcon icon={icons[props.name]} {...props} />;
-};
+const Icon = props => <FontAwesomeIcon icon={icons[props.name]} {...props} />;
 
 export default Icon;
