@@ -123,7 +123,7 @@ exports[`Storyshots BreadcrumbLinks Amos links 1`] = `
 exports[`Storyshots Button button with an id and class 1`] = `
 <button
   className="bar Button__SecondaryButton-dPBNFl jflWU"
-  disabled={false}
+  disabled={undefined}
   id="foo"
   onClick={null}
 >
@@ -144,7 +144,7 @@ exports[`Storyshots Button disabled button 1`] = `
 exports[`Storyshots Button primary button 1`] = `
 <button
   className="Button__PrimaryButton-kSpITw egvtzb"
-  disabled={false}
+  disabled={undefined}
   onClick={[Function]}
 >
   Hello Button
@@ -154,7 +154,7 @@ exports[`Storyshots Button primary button 1`] = `
 exports[`Storyshots Button with some emoji 1`] = `
 <button
   className="Button__SecondaryButton-dPBNFl jflWU"
-  disabled={false}
+  disabled={undefined}
   onClick={[Function]}
 >
   😀 😎 👍 💯
@@ -164,7 +164,7 @@ exports[`Storyshots Button with some emoji 1`] = `
 exports[`Storyshots Button with text 1`] = `
 <button
   className="Button__SecondaryButton-dPBNFl jflWU"
-  disabled={false}
+  disabled={undefined}
   onClick={null}
 >
   Hello Button
@@ -179,7 +179,7 @@ exports[`Storyshots ButtonLink default href 1`] = `
 >
   <button
     className="Button__SecondaryButton-dPBNFl jflWU"
-    disabled={false}
+    disabled={undefined}
     href={undefined}
     onClick={null}
   >
@@ -213,7 +213,7 @@ exports[`Storyshots ButtonLink primary ButtonLink 1`] = `
 >
   <button
     className="Button__PrimaryButton-kSpITw egvtzb"
-    disabled={false}
+    disabled={undefined}
     href={undefined}
     onClick={null}
   >
@@ -230,7 +230,7 @@ exports[`Storyshots ButtonLink with a custom href 1`] = `
 >
   <button
     className="Button__SecondaryButton-dPBNFl jflWU"
-    disabled={false}
+    disabled={undefined}
     href={undefined}
     onClick={null}
   >
