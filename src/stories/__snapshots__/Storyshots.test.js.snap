@@ -120,11 +120,21 @@ exports[`Storyshots BreadcrumbLinks Amos links 1`] = `
 </div>
 `;
 
+exports[`Storyshots Button button with an id and class 1`] = `
+<button
+  className="bar Button__SecondaryButton-dPBNFl jflWU"
+  disabled={false}
+  id="foo"
+  onClick={null}
+>
+  Hello Button
+</button>
+`;
+
 exports[`Storyshots Button disabled button 1`] = `
 <button
   className="Button__SecondaryButton-dPBNFl jflWU"
   disabled={true}
-  href={undefined}
   onClick={[Function]}
 >
   Disabled button
@@ -134,8 +144,7 @@ exports[`Storyshots Button disabled button 1`] = `
 exports[`Storyshots Button primary button 1`] = `
 <button
   className="Button__PrimaryButton-kSpITw egvtzb"
-  disabled={undefined}
-  href={undefined}
+  disabled={false}
   onClick={[Function]}
 >
   Hello Button
@@ -145,8 +154,7 @@ exports[`Storyshots Button primary button 1`] = `
 exports[`Storyshots Button with some emoji 1`] = `
 <button
   className="Button__SecondaryButton-dPBNFl jflWU"
-  disabled={undefined}
-  href={undefined}
+  disabled={false}
   onClick={[Function]}
 >
   😀 😎 👍 💯
@@ -156,8 +164,7 @@ exports[`Storyshots Button with some emoji 1`] = `
 exports[`Storyshots Button with text 1`] = `
 <button
   className="Button__SecondaryButton-dPBNFl jflWU"
-  disabled={undefined}
-  href={undefined}
+  disabled={false}
   onClick={null}
 >
   Hello Button
@@ -172,7 +179,7 @@ exports[`Storyshots ButtonLink default href 1`] = `
 >
   <button
     className="Button__SecondaryButton-dPBNFl jflWU"
-    disabled={undefined}
+    disabled={false}
     href={undefined}
     onClick={null}
   >
@@ -206,7 +213,7 @@ exports[`Storyshots ButtonLink primary ButtonLink 1`] = `
 >
   <button
     className="Button__PrimaryButton-kSpITw egvtzb"
-    disabled={undefined}
+    disabled={false}
     href={undefined}
     onClick={null}
   >
@@ -223,7 +230,7 @@ exports[`Storyshots ButtonLink with a custom href 1`] = `
 >
   <button
     className="Button__SecondaryButton-dPBNFl jflWU"
-    disabled={undefined}
+    disabled={false}
     href={undefined}
     onClick={null}
   >

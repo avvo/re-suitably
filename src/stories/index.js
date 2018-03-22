@@ -55,6 +55,7 @@ storiesOf("Button", module)
       Hello Button
     </Button>
   ))
+  .add("button with an id and class", () => <Button id="foo" className="bar">Hello Button</Button>)
   .add("disabled button", () => (
     <Button disabled onClick={action("button-click")}>
       Disabled button

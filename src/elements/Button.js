@@ -50,17 +50,12 @@ const SecondaryButton = styled.button`
 `;
 
 
-const Button = ({ onClick, href, children, primary, disabled }) => {
-  const ButtonClass = primary ? PrimaryButton : SecondaryButton
-
-  const buttonProps = {
-    onClick,
-    href,
-    disabled: disabled ? true : undefined,
-  };
+const Button = (props) => {
+  const ButtonClass = props.primary ? PrimaryButton : SecondaryButton
+  const buttonProps = Object.assign({}, props, {children: undefined});
   return (
     <ButtonClass {...buttonProps}>
-      {children}
+      {props.children}
     </ButtonClass>
   );
 };
