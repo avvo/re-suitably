@@ -24,6 +24,18 @@ exports[`Storyshots Avvo Logo SVG 200px wide dark blue with no hover effect 1`] 
 </svg>
 `;
 
+exports[`Storyshots Avvo Logo SVG 200px wide dark blue with options 1`] = `
+<svg
+  className="AvvoLogoSVG__StyledSvgComponent-bFXSQg ifEDbs"
+  viewBox="0 0 381.2 111.4"
+  width="200px"
+>
+  <path
+    d="M339.1 111.4c23.1 0 42.1-18.5 42.1-41.8 0-23.4-19-42-42.1-42-23.3 0-42.3 18.5-42.3 42 .1 23.3 19 41.8 42.3 41.8m-200.7-.3c36.9 0 65.1-45.6 67-82.2h-27.2c-3 23.6-10.6 40.4-20.6 48.8-.8.8-1.3.3-1.3-.3L152.6 29h-26.8l7.2 78c.3 3.2 2.8 4.1 5.4 4.1m88.5 0c36.9 0 65.1-45.6 67-82.2h-27.2c-3 23.6-10.6 40.4-20.6 48.8-.8.8-1.3.3-1.3-.3L241.1 29h-26.8l7.1 78.1c.4 3.1 2.9 4 5.5 4M78.2 36.4c.8-.8 1.6-.6 1.6.3l2.4 31.8H51.5c9.1-13.9 18.8-25.3 26.7-32.1m260.8 51c-9.3 0-16.9-7.6-16.9-17.7s7.6-17.9 16.9-17.9 17.1 7.8 17.1 17.9c0 10.1-7.8 17.7-17.1 17.7M85.3 110.6h29.4L105.6 6.8c-.3-4.3-3.5-5.5-8.9-4.9C60.3 6.3 15.4 66.8 0 110.6h29.6C32 104.3 34.8 98 38 92h45.9l1.4 18.6z"
+  />
+</svg>
+`;
+
 exports[`Storyshots Avvo Logo SVG 500px wide with custom electric blue but no hover 1`] = `
 <svg
   className="AvvoLogoSVG__StyledSvgComponent-bFXSQg dUjOVA"
@@ -147,27 +159,17 @@ exports[`Storyshots Button primary button 1`] = `
   disabled={undefined}
   onClick={[Function]}
 >
-  Hello Button
-</button>
-`;
-
-exports[`Storyshots Button with some emoji 1`] = `
-<button
-  className="Button__SecondaryButton-dPBNFl jflWU"
-  disabled={undefined}
-  onClick={[Function]}
->
-  😀 😎 👍 💯
+  React button
 </button>
 `;
 
 exports[`Storyshots Button with text 1`] = `
 <button
-  className="Button__SecondaryButton-dPBNFl jflWU"
+  className="Button__PrimaryButton-kSpITw egvtzb"
   disabled={undefined}
   onClick={null}
 >
-  Hello Button
+  React button
 </button>
 `;
 
@@ -340,14 +342,14 @@ exports[`Storyshots Icons Envelope icon 1`] = `
   aria-hidden="true"
   className="svg-inline--fa fa-envelope fa-w-16 "
   data-icon="envelope"
-  data-prefix="fas"
+  data-prefix="far"
   role="img"
   style={Object {}}
   viewBox="0 0 512 512"
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
-    d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+    d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"
     fill="currentColor"
     style={Object {}}
   />
@@ -373,25 +375,6 @@ exports[`Storyshots Icons Globe icon 1`] = `
 </svg>
 `;
 
-exports[`Storyshots Icons Person icon 1`] = `
-<svg
-  aria-hidden="true"
-  className="svg-inline--fa fa-user fa-w-16 "
-  data-icon="user"
-  data-prefix="fas"
-  role="img"
-  style={Object {}}
-  viewBox="0 0 512 512"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M256 0c88.366 0 160 71.634 160 160s-71.634 160-160 160S96 248.366 96 160 167.634 0 256 0zm183.283 333.821l-71.313-17.828c-74.923 53.89-165.738 41.864-223.94 0l-71.313 17.828C29.981 344.505 0 382.903 0 426.955V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48v-37.045c0-44.052-29.981-82.45-72.717-93.134z"
-    fill="currentColor"
-    style={Object {}}
-  />
-</svg>
-`;
-
 exports[`Storyshots Icons Phone icon 1`] = `
 <svg
   aria-hidden="true"
@@ -405,6 +388,25 @@ exports[`Storyshots Icons Phone icon 1`] = `
 >
   <path
     d="M493.397 24.615l-104-23.997c-11.314-2.611-22.879 3.252-27.456 13.931l-48 111.997a24 24 0 0 0 6.862 28.029l60.617 49.596c-35.973 76.675-98.938 140.508-177.249 177.248l-49.596-60.616a24 24 0 0 0-28.029-6.862l-111.997 48C3.873 366.516-1.994 378.08.618 389.397l23.997 104C27.109 504.204 36.748 512 48 512c256.087 0 464-207.532 464-464 0-11.176-7.714-20.873-18.603-23.385z"
+    fill="currentColor"
+    style={Object {}}
+  />
+</svg>
+`;
+
+exports[`Storyshots Icons User icon 1`] = `
+<svg
+  aria-hidden="true"
+  className="svg-inline--fa fa-user fa-w-16 "
+  data-icon="user"
+  data-prefix="fas"
+  role="img"
+  style={Object {}}
+  viewBox="0 0 512 512"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M256 0c88.366 0 160 71.634 160 160s-71.634 160-160 160S96 248.366 96 160 167.634 0 256 0zm183.283 333.821l-71.313-17.828c-74.923 53.89-165.738 41.864-223.94 0l-71.313 17.828C29.981 344.505 0 382.903 0 426.955V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48v-37.045c0-44.052-29.981-82.45-72.717-93.134z"
     fill="currentColor"
     style={Object {}}
   />

@@ -1,11 +1,22 @@
 import React from "react";
 
-import { storiesOf } from "@storybook/react";
+import { storiesOf, addDecorator, setAddon } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { linkTo } from "@storybook/addon-links";
+import {
+  withKnobs,
+  text,
+  boolean,
+  number,
+  color,
+  select,
+  selectV2
+} from "@storybook/addon-knobs/react";
+import backgrounds from "@storybook/addon-backgrounds";
+import { withInfo } from "@storybook/addon-info";
 
-import FontAwesome from "@fortawesome/react-fontawesome";
-import { faGlobe } from "@fortawesome/fontawesome-free-solid";
+import JSXAddon from "storybook-addon-jsx";
+import invertObj from "ramda/src/invertObj";
 
 import {
   AvvoLogoSVG,
@@ -14,12 +25,37 @@ import {
   ButtonLink,
   Checkbox,
   colors,
-  Icon,
   Link,
+  Icon,
   Textbox
 } from "../index.js";
 
-storiesOf("Avvo Logo SVG", module)
+addDecorator(withKnobs);
+setAddon(JSXAddon);
+
+const AvvoLogoSVGStories = storiesOf("Avvo Logo SVG", module)
+  .addDecorator(
+    backgrounds([
+      { name: "Avvo BG", value: colors.bgColor },
+      { name: "Blue", value: colors.blue }
+    ])
+  )
+  .addWithJSX("200px wide dark blue with options", () => {
+    const fillColor = selectV2("Fill color", colors.avvoPrimary, colors.navy);
+    const hoverColor = selectV2(
+      "Hover color",
+      colors.avvoPrimary,
+      colors.electricBlue
+    );
+    return (
+      <AvvoLogoSVG
+        width={text("width", "200px")}
+        color={fillColor}
+        hover={boolean("Hover", true)}
+        hoverColor={colors.blue}
+      />
+    );
+  })
   .add("200px wide dark blue with hover effect", () => {
     return <AvvoLogoSVG width="200px" hover />;
   })
@@ -45,17 +81,22 @@ storiesOf("Avvo Logo SVG", module)
 
 storiesOf("Button", module)
   .add("with text", () => {
-    return <Button>Hello Button</Button>;
+    return (
+      <Button primary={boolean("Primary", true)}>
+        {text("Button Text", "React button")}
+      </Button>
+    );
   })
-  .add("with some emoji", () => (
-    <Button onClick={action("button-click")}>😀 😎 👍 💯</Button>
-  ))
   .add("primary button", () => (
     <Button primary onClick={action("button-click")}>
+      {text("Button Text", "React button")}
+    </Button>
+  ))
+  .add("button with an id and class", () => (
+    <Button id="foo" className="bar">
       Hello Button
     </Button>
   ))
-  .add("button with an id and class", () => <Button id="foo" className="bar">Hello Button</Button>)
   .add("disabled button", () => (
     <Button disabled onClick={action("button-click")}>
       Disabled button
@@ -90,28 +131,28 @@ storiesOf("Textbox", module)
 
 storiesOf("Icons", module)
   .add("Globe icon", () => {
-    return <FontAwesome icon="globe" />;
+    return <Icon name="Globe" />;
   })
   .add("Phone icon", () => {
-    return <Icon icon="phone" />;
+    return <Icon name="Phone" />;
   })
   .add("Envelope icon", () => {
-    return <Icon icon="envelope" />;
+    return <Icon name="Envelope" />;
   })
   .add("ChevronUp icon", () => {
-    return <Icon icon="chevron-up" />;
+    return <Icon name="ChevronUp" />;
   })
   .add("ChevronDown icon", () => {
-    return <Icon icon="chevron-down" />;
-  })
-  .add("ChevronLeft icon", () => {
-    return <Icon icon="chevron-left" />;
+    return <Icon name="ChevronDown" />;
   })
   .add("ChevronRight icon", () => {
-    return <Icon icon="chevron-right" />;
+    return <Icon name="ChevronRight" />;
   })
-  .add("Person icon", () => {
-    return <Icon icon="user" />;
+  .add("ChevronLeft icon", () => {
+    return <Icon name="ChevronLeft" />;
+  })
+  .add("User icon", () => {
+    return <Icon name="User" />;
   });
 
 storiesOf("BreadcrumbLinks", module).add("Amos links", () => {
