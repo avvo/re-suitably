@@ -129,34 +129,25 @@ storiesOf("Textbox", module)
     <Textbox defaultValue="Initial text" onChange={action("text-change")} />
   ));
 
-storiesOf("Icons", module)
-  .add("Globe icon", () => {
-    return <Icon name="Globe" />;
-  })
-  .add("Phone icon", () => {
-    return <Icon name="Phone" />;
-  })
-  .add("Envelope icon", () => {
-    return <Icon name="Envelope" />;
-  })
-  .add("ChevronUp icon", () => {
-    return <Icon name="ChevronUp" />;
-  })
-  .add("ChevronDown icon", () => {
-    return <Icon name="ChevronDown" />;
-  })
-  .add("ChevronRight icon", () => {
-    return <Icon name="ChevronRight" />;
-  })
-  .add("ChevronLeft icon", () => {
-    return <Icon name="ChevronLeft" />;
-  })
-  .add("User icon", () => {
-    return <Icon name="User" />;
-  })
-  .add("Sort icon", () => {
-    return <Icon name="Sort" />;
-  });
+storiesOf("Icons", module).add("Globe icon", () => {
+  const icons = {
+    ArrowCircleDown: "ArrowCircleDown",
+    ArrowCircleLeft: "ArrowCircleLeft",
+    ArrowCircleRight: "ArrowCircleDown",
+    ArrowCircleUp: "ArrowCircleDown",
+    Globe: "Globe",
+    Phone: "Phone",
+    Envelope: "Envelope",
+    ChevronUp: "ChevronUp",
+    ChevronDown: "ChevronDown",
+    ChevronRight: "ChevronRight",
+    ChevronLeft: "ChevronLeft",
+    User: "User",
+    Sort: "Sort",
+    Download: "Download"
+  };
+  return <Icon name={selectV2("Icons", icons, "Globe")} width="400" />;
+});
 
 storiesOf("BreadcrumbLinks", module).add("Amos links", () => {
   const amos = process.env.AMOS_BASE_URL;
