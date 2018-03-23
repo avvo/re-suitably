@@ -153,6 +153,9 @@ storiesOf("Icons", module)
   })
   .add("User icon", () => {
     return <Icon name="User" />;
+  })
+  .add("Sort icon", () => {
+    return <Icon name="Sort" />;
   });
 
 storiesOf("BreadcrumbLinks", module).add("Amos links", () => {
