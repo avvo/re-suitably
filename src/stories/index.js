@@ -26,7 +26,6 @@ import {
   Checkbox,
   colors,
   Link,
-  Icon,
   Textbox
 } from "../index.js";
 
@@ -128,26 +127,6 @@ storiesOf("Textbox", module)
   .add("with default text", () => (
     <Textbox defaultValue="Initial text" onChange={action("text-change")} />
   ));
-
-storiesOf("Icons", module).add("Globe icon", () => {
-  const icons = {
-    ArrowCircleDown: "ArrowCircleDown",
-    ArrowCircleLeft: "ArrowCircleLeft",
-    ArrowCircleRight: "ArrowCircleDown",
-    ArrowCircleUp: "ArrowCircleDown",
-    Globe: "Globe",
-    Phone: "Phone",
-    Envelope: "Envelope",
-    ChevronUp: "ChevronUp",
-    ChevronDown: "ChevronDown",
-    ChevronRight: "ChevronRight",
-    ChevronLeft: "ChevronLeft",
-    User: "User",
-    Sort: "Sort",
-    Download: "Download"
-  };
-  return <Icon name={selectV2("Icons", icons, "Globe")} width="400" />;
-});
 
 storiesOf("BreadcrumbLinks", module).add("Amos links", () => {
   const amos = process.env.AMOS_BASE_URL;

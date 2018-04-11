@@ -5,7 +5,6 @@ import ButtonLink from "./elements/ButtonLink";
 import Checkbox from "./elements/Checkbox";
 import colors from "./styles/colors";
 import Link from "./elements/Link";
-import Icon from "./elements/Icon";
 import Textbox from "./elements/Textbox";
 
 export {
@@ -16,6 +15,5 @@ export {
   Checkbox,
   colors,
   Link,
-  Icon,
   Textbox
 };

@@ -2,7 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import colors from "../styles/colors";
 import Link from "./Link";
-import Icon from "./Icon";
+import FontAwesome from "@fortawesome/react-fontawesome";
+import AngleRight from "@fortawesome/fontawesome-free-solid/faAngleRight";
 
 const BreadcrumbLinks = ({ links, currentPage }) => {
   return (
@@ -10,8 +11,9 @@ const BreadcrumbLinks = ({ links, currentPage }) => {
       {links.map(link => (
         <span key={link.name}>
           <Link href={link.url}>{link.name}</Link>
-          &nbsp;<Icon
-            name="ChevronRight"
+          &nbsp;
+          <FontAwesome
+            icon={AngleRight}
             style={{ color: colors.grey40 }}
           />&nbsp;
         </span>
